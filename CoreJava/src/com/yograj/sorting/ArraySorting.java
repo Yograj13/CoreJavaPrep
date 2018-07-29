@@ -7,6 +7,7 @@ public class ArraySorting {
 		// TODO Auto-generated method stub
 		ArraySorting obj = new ArraySorting();
 		obj.printSortedArray(a);
+		obj.printSortedArrayLessTimeComplexity(a);
 	}
 	
 	public void  printSortedArray(int a[]) {
@@ -23,14 +24,28 @@ public class ArraySorting {
 				j++;
 			}
 			i++;
-			System.out.println("Inside-->" +a);
+			//System.out.println("Inside-->" +a);
 		}
 		for (int num: a) {
 			System.out.println(num);
 		}
+		System.out.println("printSortedArray------>arr");
 		for (int inum1 = 0; inum1 < a.length; inum1++) 
         {
             System.out.print(a[inum1] + ",");
         }
+	}
+	
+	public void printSortedArrayLessTimeComplexity(int a[]) {
+		int arr[]= new int[100];
+		
+		for(int i : a) {
+			arr[i]=i;
+		}
+		System.out.println("printSortedArrayLessTimeComplexity------>arr");
+		for(int j: arr) {
+			if(j!=0)
+				System.out.println(j);
+		}
 	}
 }
