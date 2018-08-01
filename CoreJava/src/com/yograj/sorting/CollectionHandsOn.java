@@ -2,13 +2,16 @@ package com.yograj.sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.Vector;
 
@@ -24,7 +27,7 @@ public  class CollectionHandsOn {
 //		
 //	vectorHandsOn();
 //
-//	linkedListHandsOn();
+	linkedListHandsOn();
 //		
 //		hashSetHandsOn();
 //		
@@ -34,7 +37,7 @@ public  class CollectionHandsOn {
 //		
 //		hasMapHandsOn();
 //		
-		//hashTableHandsOn();
+//		hashTableHandsOn();
 //		
 //		linkedHashMapHandsOn();
 //		
@@ -48,11 +51,36 @@ public  class CollectionHandsOn {
 	private static void treeMapHandsOn() {
 		// TODO Auto-generated method stub
 		System.out.println("treeMapHandsOn handson============================>");
+		Map<String,String> hashMap = new TreeMap<>();
+		hashMap.put("", "");
+		//hashMap.put(null, null);
+		hashMap.put("1", null);
+		hashMap.put("2", null);
+		hashMap.put("5", "one");hashMap.put("A", null);
+		hashMap.put("2", null);
+		
+	//	hashMap.put(null, "2nd null key");
+		for(String str: hashMap.keySet())
+			System.out.println(str +" : "+ hashMap.get(str));
+		
+		
 	}
 
 	private static void linkedHashMapHandsOn() {
 		// TODO Auto-generated method stub
 		System.out.println("linkedHashMapHandsOn handson============================>");
+		
+
+		
+		Map<String,String> hashMap = new LinkedHashMap<>();
+		hashMap.put("", "");
+		hashMap.put(null, null);
+		hashMap.put("1", null);
+		hashMap.put("2", null);
+		hashMap.put("1", "one");
+		hashMap.put(null, "2nd null key");
+		for(String str: hashMap.keySet())
+			System.out.println(hashMap.get(str));
 	}
 
 	private static void hashTableHandsOn() {
@@ -63,7 +91,11 @@ public  class CollectionHandsOn {
 		//hashTable.put(null, "V1");
 		//hashTable.put("1", null);
 		hashTable.put("", "V2");
-		hashTable.put("", "V3");
+		hashTable.put("", "2nd blank key");
+		hashTable.put("2", "2");
+		
+		hashTable.put("3", "3");
+		
 		
 		for(String str: hashTable.keySet())
 			System.out.println(hashTable.get(str));
@@ -74,6 +106,16 @@ public  class CollectionHandsOn {
 	private static void hasMapHandsOn() {
 		// TODO Auto-generated method stub
 		System.out.println("hasMapHandsOn handson============================>");
+		
+		Map<String,String> hashMap = new HashMap<>();
+		hashMap.put("", "");
+		hashMap.put(null, null);
+		hashMap.put("1", null);
+		hashMap.put("2", null);
+		hashMap.put("1", "one");
+		hashMap.put(null, "2nd null key");
+		for(String str: hashMap.keySet())
+			System.out.println(hashMap.get(str));
 	}
 
 	private static void treeSetHandsOn() {

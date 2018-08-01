@@ -26,12 +26,16 @@ public class LambdaExpresssions {
 			return o1.getFirstName().compareTo(o2.getFirstName());
 		}});*/
 		
-		Collections.sort(personList, (o1, o2) -> o1.getFirstName().compareTo(o2.getFirstName()) );
+		//Collections.sort(personList, (o1, o2) -> o1.getFirstName().compareTo(o2.getFirstName()) );
+		
+		//Collections.sort(personList, (o1,o2) -> o1.getLastName().compareTo(o2.getLastName()));
+		
+		//Collections.sort(personList); // sort using comparable
+		
+/*	for(Person p : personList)
+		System.out.println(p);*/
 	
-	for(Person p : personList)
-		System.out.println(p);
-	
-	System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
+	System.out.println("++++++++++++Printing sorted list with first name+++++++++++++++++++++++++++++++++++");
 	printConditionally(personList, p -> true);
 	System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
 	printConditionally(personList, p -> p.getFirstName().startsWith("V"));
