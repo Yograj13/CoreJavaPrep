@@ -1,0 +1,5 @@
+Web services are very popular these days because they
+are language and platform independent.
+It’s easy to create SOAP and REST based web services.
+This post will help you learn about web services and related interview questions.
+Then there are questions with detailed answers for Java Web Services.
